@@ -1,0 +1,21 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= ENV.fetch("MYSQL_USERNAME", "root") %>
+  password: <%= ENV.fetch("MYSQL_PASSWORD", "athleteK059.") %>
+  host: <%= ENV.fetch("MYSQL_HOST", "localhost") %>
+
+development:
+  <<: *default
+  database: PR_development
+
+test:
+  <<: *default
+  database: PR_test
+
+production:
+  <<: *default
+  database: PR_production
+  username: PR
+  password: <%= ENV['PR_DATABASE_PASSWORD'] %>
