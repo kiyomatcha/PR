@@ -33,7 +33,7 @@ RSpec.describe "pages", type: :request do
     end
   end
 
-  describe "よくある質問ページ" do
+  describe "プライバシーポリシーページ" do
     it "正常なレスポンスを返すこと" do
       get privacy_path
       expect(response).to be_successful
