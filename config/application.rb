@@ -12,7 +12,7 @@ module PR
     config.load_defaults 6.0
 
     config.generators do |g|
-      g.assets false          # CSS, JavaScriptファイルは生成しない
+      g.assets false # CSS, JavaScriptファイルは生成しない
       g.test_framework :rspec,    # RSpecを使用
         controller_specs: false,  # controller specは作らない
         view_specs: false,        # view specは作らない

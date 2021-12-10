@@ -21,6 +21,7 @@ RSpec.describe "Pages", type: :system do
     before do
       visit about_path
     end
+
     it "サービスについての文字列が存在することを確認" do
       expect(page).to have_content 'サービスについて'
     end
@@ -33,6 +34,7 @@ RSpec.describe "Pages", type: :system do
     before do
       visit help_path
     end
+
     it "よくある質問の文字列が存在することを確認" do
       expect(page).to have_content 'よくある質問'
     end
@@ -45,6 +47,7 @@ RSpec.describe "Pages", type: :system do
     before do
       visit terms_path
     end
+
     it "利用規約の文字列が存在することを確認" do
       expect(page).to have_content '利用規約'
     end
@@ -57,6 +60,7 @@ RSpec.describe "Pages", type: :system do
     before do
       visit privacy_path
     end
+
     it "プライバシーポリシーの文字列が存在することを確認" do
       expect(page).to have_content 'プライバシーポリシー'
     end

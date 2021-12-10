@@ -3,6 +3,6 @@ Rails.application.routes.draw do
   get :about,        to: 'pages#about'
   get :help,         to: 'pages#help'
   get :terms, to: 'pages#terms'
-  get :privacy,      to: 'pages#privacy'
+  get :privacy, to: 'pages#privacy'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
