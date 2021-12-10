@@ -98,7 +98,7 @@ GEM
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.12.0)
+    loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -255,7 +255,7 @@ DEPENDENCIES
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   rails-controller-testing
-  rspec-rails (~> 4.0.0.beta2)
+  rspec-rails (~> 4.0.0.beta3)
   sass-rails (>= 6)
   selenium-webdriver
   spring
