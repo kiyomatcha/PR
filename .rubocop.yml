@@ -1,0 +1,75 @@
+inherit_from:
+  - .rubocop_airbnb.yml
+
+Rails:
+  Enabled: true
+
+AllCops:
+  Exclude:
+    - 'bin/**'
+    - 'config/**/*'
+    - 'db/**/*'
+    - 'vendor/**/**/*'
+    - 'spec/*'
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: false
+
+Style/BlockDelimiters:
+  Enabled: false
+
+Layout/FirstHashElementLineBreak:
+  Enabled: false
+
+Airbnb/OptArgParameters:
+  Enabled: false
+
+Style/ColonMethodCall:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  Enabled: false
+
+Layout/IndentationWidth:
+  Enabled: false
+
+Style/MixinUsage:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+
+Rails/ActiveRecordCallbacksOrder: # (new in 2.7)
+  Enabled: true
+Rails/AfterCommitOverride: # (new in 2.8)
+  Enabled: true
+Rails/AttributeDefaultBlockValue: # (new in 2.9)
+  Enabled: true
+Rails/FindById: # (new in 2.7)
+  Enabled: true
+Rails/Inquiry: # (new in 2.7)
+  Enabled: true
+Rails/MailerName: # (new in 2.7)
+  Enabled: true
+Rails/MatchRoute: # (new in 2.7)
+  Enabled: true
+Rails/NegateInclude: # (new in 2.7)
+  Enabled: true
+Rails/Pluck: # (new in 2.7)
+  Enabled: true
+Rails/PluckInWhere: # (new in 2.7)
+  Enabled: true
+Rails/RenderInline: # (new in 2.7)
+  Enabled: true
+Rails/RenderPlainText: # (new in 2.7)
+  Enabled: true
+Rails/ShortI18n: # (new in 2.7)
+  Enabled: true
+Rails/SquishedSQLHeredocs: # (new in 2.8)
+  Enabled: true
+Rails/WhereEquals: # (new in 2.9)
+  Enabled: true
+Rails/WhereExists: # (new in 2.7)
+  Enabled: true
+Rails/WhereNot: # (new in 2.8)
+  Enabled: true
