@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+before_action :sign_in_required, only: [:show]
+
   def home
   end
 
@@ -12,5 +14,8 @@ class PagesController < ApplicationController
   end
 
   def privacy
+  end
+
+  def show
   end
 end

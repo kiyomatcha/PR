@@ -11,6 +11,11 @@ module PR
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
+    config.time_zone = "Tokyo"
+    config.i18n.load_path +=
+      Dir[Rails.root.join("config", "locales", "**", "*.{rb,yml}").to_s]
+    config.i18n.default_locale = :ja
+
     config.generators do |g|
       g.assets false # CSS, JavaScriptファイルは生成しない
       g.test_framework :rspec,    # RSpecを使用
