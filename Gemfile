@@ -6,7 +6,6 @@ ruby '3.0.3'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 
-gem 'mysql2', '>= 0.5.3'
 gem 'dotenv-rails'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
@@ -33,10 +32,15 @@ gem 'rails-i18n'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'mysql2', '>= 0.5.3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', '~> 4.0.0.beta3'
   gem 'rails-controller-testing'
   gem 'rubocop-airbnb'
+end
+
+group :production do
+  gem 'pg'
 end
 
 group :development do
