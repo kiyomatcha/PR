@@ -16,8 +16,9 @@ test:
 
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: PR_production
   username: PR
   password: <%= ENV['PR_DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
-
