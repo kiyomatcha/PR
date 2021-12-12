@@ -12,6 +12,7 @@ class User < ApplicationRecord
                     uniqueness: { case_sensitive: false }
 
   private
+
     def downcase_email
       self.email = email.downcase
     end
