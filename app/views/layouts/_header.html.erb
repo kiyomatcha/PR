@@ -1,14 +1,15 @@
 <header class="navber navber-fixed-top">
   <div class="container">
-    <div>
+    <%= link_to "ホームへ（ロゴ）", root_path, id: 'logo' %>
+    <nav>
       <% if user_signed_in? %>
         <strong><%= link_to current_user.name, show_path %></strong>
         <%= link_to 'プロフィール変更', edit_user_registration_path %>
         <%= link_to 'ログアウト', destroy_user_session_path %>
       <% else %>
-        <%= link_to 'サインアップ', new_user_registration_path %>
+        <%= link_to 'ユーザー登録', new_user_registration_path %>
         <%= link_to 'ログイン', new_user_session_path %>
       <% end %>
-    </div>
+    </nav>
   </div>
 </header>
